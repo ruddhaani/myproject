@@ -22,6 +22,11 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->string('phone');
+            $table->text('address');
+            $table->string('country');
+            $table->string('city');
+            $table->text('biography');
         });
     }
 
